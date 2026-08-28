@@ -4,14 +4,25 @@
   "private": true,
   "description": "Your personal intelligence feed for the open web.",
   "license": "MIT",
-  "scripts": {
-    "dev": "echo \"Monorepo not initialized yet\"",
-    "build": "echo \"Monorepo not initialized yet\"",
-    "lint": "echo \"Monorepo not initialized yet\"",
-    "test": "echo \"Monorepo not initialized yet\""
-  },
+  "packageManager": "pnpm@9.15.0",
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@9.15.0"
+  "scripts": {
+    "dev": "pnpm --filter @signaldeck/web dev",
+    "build": "pnpm --filter @signaldeck/web build",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:generate": "pnpm --filter @signaldeck/db generate",
+    "db:migrate": "pnpm --filter @signaldeck/db migrate"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.26.0"
+  }
 }
