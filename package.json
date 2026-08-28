@@ -1,0 +1,17 @@
+{
+  "name": "signaldeck",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Your personal intelligence feed for the open web.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "echo \"Monorepo not initialized yet\"",
+    "build": "echo \"Monorepo not initialized yet\"",
+    "lint": "echo \"Monorepo not initialized yet\"",
+    "test": "echo \"Monorepo not initialized yet\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
